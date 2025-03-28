@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Construct - Flooring Experts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #e6af2e;
+        }
+
+        header {
+            background: linear-gradient(to right, #000, #222);
+            color: #e6af2e;
+            padding: 30px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: linear-gradient(to right, #111, #222);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(230,175,46,0.2);
+        }
+
+            nav a {
+                color: #e6af2e;
+                text-decoration: none;
+                margin: 0 25px;
+                font-size: 22px;
+                font-weight: bold;
+                transition: color 0.3s ease-in-out;
+                font-family: 'Playfair Display', serif;
+            }
+
+                nav a:hover {
+                    color: #ffd700;
+                }
+
+        .hero {
+            background: url('flooring-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .service-box {
+            background: #111;
+            padding: 30px;
+            width: 30%;
+            box-shadow: 0 6px 15px rgba(230, 175, 46, 0.3);
+            text-align: center;
+            color: #e6af2e;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            font-family: 'Lora', serif;
+            border: 2px solid transparent;
+        }
+
+            .service-box:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+            }
+
+            .service-box img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffd700;
+            margin-top: 15px;
+        }
+
+        .about, .contact-info {
+            text-align: center;
+            margin: 50px auto;
+            padding: 30px;
+            background: #111;
+            color: #e6af2e;
+            font-size: 20px;
+            width: 80%;
+            border-radius: 10px;
+            font-family: 'Lora', serif;
+            box-shadow: 0 5px 15px rgba(230, 175, 46, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(to top, #111, #222);
+            color: #e6af2e;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            margin-top: 50px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box {
+                width: 80%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        Bold Construct - Flooring Experts
+    </header>
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact-info" class="nav-link">Contact</a>
+    </nav>
+    <div class="hero" id="home">
+        <h1>Quality Flooring Solutions</h1>
+        <p>Transforming Spaces with Premium Flooring</p>
+    </div>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>For over a decade, Bold Construct has been dedicated to providing top-tier flooring solutions. We specialize in high-quality flooring that blends durability, elegance, and expert craftsmanship. Our commitment to excellence and customer satisfaction has made us a trusted leader in the industry.</p>
+    </div>
+    <div class="container" id="services">
+        <h2 style="text-align: center; font-size: 30px; font-family: 'Playfair Display', serif;">Our Services</h2>
+        <div class="services">
+            <div class="service-box" onclick="navigateTo('carpet_flooring.html')">
+                <img src="carpet.jpeg" alt="Carpet Flooring">
+                <h3>Carpet Flooring</h3>
+                <p>Soft and comfortable flooring for every home.</p>
+                <p class="price">£15 per square meter</p>
+            </div>
+            <div class="service-box" onclick="navigateTo('laminated_flooring.html')">
+                <img src="laminated.jpeg" alt="Laminate Flooring">
+                <h3>Laminate Flooring</h3>
+                <p>Cost-effective and stylish flooring.</p>
+                <p class="price">£20 per square meter</p>
+            </div>
+            <div class="service-box" onclick="navigateTo('vinyl-flooring.html')">
+                <img src="vinyl.jpeg" alt="Vinyl Flooring">
+                <h3>Vinyl Flooring</h3>
+                <p>Durable, water-resistant, and perfect for modern homes.</p>
+                <p class="price">£15 per square meter</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-info" id="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@boldconstruct.com</p>
+        <p>Phone: +44 1234 567 890</p>
+        <p>Address: 123 Bold Street, London, UK</p>
+    </div>
+    <footer>
+        &copy; 2025 Bold Construct
+    </footer>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    let targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                    let startPosition = window.scrollY;
+                    let distance = targetPosition - startPosition;
+                    let duration = 800;
+                    let startTime = null;
+
+                    function animation(currentTime) {
+                        if (startTime === null) startTime = currentTime;
+                        let timeElapsed = currentTime - startTime;
+                        let run = ease(timeElapsed, startPosition, distance, duration);
+                        window.scrollTo(0, run);
+                        if (timeElapsed < duration) requestAnimationFrame(animation);
+                    }
+
+                    function ease(t, b, c, d) {
+                        t /= d / 2;
+                        if (t < 1) return c / 2 * t * t + b;
+                        t--;
+                        return -c / 2 * (t * (t - 2) - 1) + b;
+                    }
+
+                    requestAnimationFrame(animation);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
